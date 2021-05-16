@@ -17,7 +17,7 @@ class Solution {
         if(prices[prices.length - 1] - buyPrice > 0) maxProfit += prices[prices.length - 1] - buyPrice;
         return maxProfit;
     }
-    //This is Leetcode's solution. This buys and sells whenever there is any gain. 
+    //This is Leetcode's solution. This accumulates unrealized profit whenever there is any gain. 
     //Much cleaner and something to keep in mind
     public int maxProfit(int[] prices) {
         int maxprofit = 0;
